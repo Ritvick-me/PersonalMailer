@@ -1,0 +1,59 @@
+.rvp-projects-showcase {
+  background-color: var(--color-secondary);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rvp-projects-showcase-body {
+  width: 60rem;
+  padding: 10rem 0;
+}
+
+.rvp-projects-arrangement-odd {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.rvp-projects-arrangement-even {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1300px) {
+  .rvp-projects-showcase-body {
+    width: 40rem;
+    padding: 10rem 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .rvp-projects-arrangement-even {
+    justify-content: center;
+  }
+  .rvp-projects-arrangement-odd {
+    justify-content: center;
+  }
+  .rvp-projects-showcase-body {
+    padding: 5rem 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .rvp-projects-showcase-body {
+    width: 100%;
+    padding: 10rem 0;
+  }
+  .rvp-projects-arrangement-even {
+    justify-content: center;
+  }
+  .rvp-projects-arrangement-odd {
+    justify-content: center;
+  }
+  .rvp-projects-showcase-body {
+    padding: 1rem 0;
+  }
+}

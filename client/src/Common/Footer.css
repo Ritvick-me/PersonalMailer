@@ -1,0 +1,242 @@
+.rvp-footer {
+  position: relative;
+  background-color: var(--color-primary);
+  width: 100vw;
+  padding: 10rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.rvp-footer-credits {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 1rem;
+}
+
+.rvp-ritvick-v-pandey {
+  color: var(--color-tartiary);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: var(--bold);
+}
+
+.rvp-ritvick-v-pandey span {
+  color: var(--white);
+}
+
+.rvp-footer-logo {
+  width: 20rem;
+  text-align: center;
+}
+
+.rvp-footer-logo img {
+  padding: 1rem 0;
+}
+
+.rvp-footer-details {
+  width: 45rem;
+}
+
+.rvp-my-logo {
+  width: 15rem;
+  cursor: pointer;
+}
+
+.rvp-my-sign {
+  cursor: pointer;
+}
+
+.rvp-footer-details h1 {
+  color: var(--color-purple);
+  text-transform: uppercase;
+}
+
+.rvp-footer-showcase-text {
+  color: var(--white);
+  margin-bottom: 3rem;
+  font-size: 1.3rem;
+}
+
+.rvp-button-area {
+  text-align: center;
+}
+
+.rvp-button-area button {
+  padding: 1rem 2rem;
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: var(--regular);
+  background-color: transparent;
+  border-style: solid;
+  border-color: var(--white);
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+.rvp-socials {
+  width: 100%;
+  margin-top: 5rem;
+  padding: 0;
+  list-style-type: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rvp-socials li {
+  position: relative;
+  cursor: pointer;
+  margin: auto;
+}
+
+.rvp-socials li:nth-child(1) {
+  margin-left: 0;
+}
+
+.rvp-socials li a {
+  text-decoration: none;
+}
+
+.rvp-socials li a::before {
+  font-family: FontAwesome !important;
+  position: absolute;
+  top: -19.7px;
+  left: -0px;
+  font-size: 5em;
+  height: 10px;
+  width: 100%;
+  overflow: hidden;
+  transition-duration: 0.7s;
+  content: "\f082";
+}
+
+.rvp-socials li:hover a::before {
+  height: 130%;
+}
+
+.rvp-socials li:nth-child(1) a:before {
+  content: "\f87b";
+  color: var(--color-red);
+  border-bottom-style: solid;
+  border-bottom-color: var(--color-red);
+  border-width: 5px;
+}
+
+.rvp-socials li:nth-child(2) a:before {
+  content: "\f08c";
+  color: var(--color-yellow);
+  border-bottom-style: solid;
+  border-bottom-color: var(--color-yellow);
+  border-width: 5px;
+}
+
+.rvp-socials li:nth-child(3) a:before {
+  content: "\f40c";
+  color: var(--color-green);
+  border-bottom-style: solid;
+  border-bottom-color: var(--color-green);
+  border-width: 5px;
+}
+
+.rvp-socials li:nth-child(4) a:before {
+  content: "\f092";
+  color: var(--color-purple);
+  border-bottom-style: solid;
+  border-bottom-color: var(--color-purple);
+  border-width: 5px;
+}
+
+.fab {
+  color: var(--color-tartiary) !important;
+  font-size: 5em;
+  font-family: FontAwesome !important;
+}
+
+@media (max-width: 1300px) {
+  .rvp-footer-logo {
+    width: 15rem;
+    text-align: center;
+  }
+  .rvp-my-logo {
+    width: 12rem;
+  }
+  .rvp-footer-details {
+    width: 35rem;
+  }
+  .rvp-footer-details h1 {
+    font-size: 3.4rem;
+  }
+  .rvp-footer-showcase-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .rvp-footer {
+    display: block;
+  }
+  .rvp-footer-logo {
+    width: auto;
+    text-align: center;
+  }
+  .rvp-my-logo {
+    width: 15rem;
+  }
+  .rvp-my-sign {
+    width: 20rem;
+  }
+  .rvp-footer-details {
+    width: 35rem;
+    margin: 3rem auto;
+  }
+  .rvp-socials li:nth-child(1) {
+    margin: auto;
+  }
+}
+
+@media (max-width: 580px) {
+  .rvp-my-logo {
+    width: 12rem;
+  }
+  .rvp-my-sign {
+    width: 15rem;
+  }
+  .rvp-footer-details {
+    width: 30rem;
+    margin: 3rem auto 0 auto;
+  }
+  .rvp-socials li:nth-child(1) {
+    margin: auto;
+  }
+  .rvp-footer-details h1 {
+    font-size: 2.9rem;
+  }
+  .rvp-ritvick-v-pandey {
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .rvp-footer {
+    padding: 5rem 0;
+  }
+  .rvp-footer-details {
+    width: 20rem;
+  }
+  .rvp-socials li:nth-child(1) {
+    margin: auto;
+  }
+  .rvp-footer-details h1 {
+    font-size: 2.5rem;
+  }
+  .rvp-footer-showcase-text {
+    font-size: 1rem;
+  }
+  .rvp-footer-credits {
+    bottom: 5px;
+  }
+}

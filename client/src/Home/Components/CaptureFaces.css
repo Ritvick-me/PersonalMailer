@@ -1,0 +1,110 @@
+.rvp-capture-faces {
+  width: 100vw;
+  background-color: var(--color-secondary);
+  padding: 10rem 0 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rvp-mobile-device {
+  margin: 5rem 0;
+  width: 58rem;
+  height: 25rem;
+  background-color: var(--color-primary);
+  border-style: solid;
+  border-width: 0.7rem;
+  border-radius: 30px;
+  border-color: var(--black);
+  box-shadow: 0 0 15px 0.5px var(--black);
+  position: relative;
+  overflow: hidden;
+  transform: rotateZ(4deg);
+  transition-duration: 2s;
+}
+
+.rvp-mobile-device:hover {
+  transform: rotate(6deg) translateX(30px);
+  transition-duration: 2s;
+}
+
+.rvp-mobile-camera {
+  width: 1rem;
+  height: 1rem;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: calc((25rem / 2) - 1.1rem);
+}
+
+.rvp-camera-background {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../Assets/Lily.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rvp-camera {
+  width: 110% !important;
+  transform: rotateZ(-4deg) rotateY(180deg);
+  border-style: none;
+}
+
+.rvp-capture-caption {
+  color: var(--white);
+  text-align: center;
+  font-weight: var(--semi-bold);
+  font-size: 1rem;
+}
+
+.rvp-capture-caption span {
+  color: var(--color-green);
+}
+
+@media (max-width: 992px) {
+  .rvp-mobile-device {
+    width: 40rem;
+    height: 20rem;
+  }
+  .rvp-mobile-camera {
+    top: calc((20rem / 2) - 1.1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .rvp-mobile-device {
+    width: 20rem;
+    height: 40rem;
+    transform: rotateZ(0deg);
+    margin: 3rem 0;
+  }
+  .rvp-mobile-device:hover {
+    transform: rotate(2deg) translateY(-10px) !important;
+    transition-duration: 2s;
+  }
+  .rvp-capture-faces {
+    padding: 0;
+  }
+  .rvp-mobile-camera {
+    top: 15px;
+    left: calc((20rem / 2) - 1.1rem);
+  }
+  .rvp-camera-background {
+    background-image: url("../../Assets/Flowers.jpg");
+  }
+  .rvp-camera {
+    width: auto !important;
+    height: 100%;
+    transform: rotateZ(0deg) rotateY(180deg);
+    border-style: none;
+  }
+  .rvp-capture-caption {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+  }
+}

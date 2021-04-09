@@ -1,0 +1,280 @@
+.rvp-hobbies {
+  background-color: var(--color-secondary);
+  padding: 15rem 0 3rem 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rvp-hobbies-body {
+  width: 60rem;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.rvp-poetry-outer {
+  height: 40rem;
+  width: 35rem;
+  margin: 1rem 1rem 1rem 0;
+  border-radius: 20px;
+  transition-duration: 0.5s;
+  border-style: none;
+  cursor: pointer;
+}
+
+.rvp-poetry-outer:hover .rvp-poetry {
+  transform-origin: bottom;
+  transform: rotateZ(-2deg);
+}
+
+.rvp-poetry {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  border-style: solid;
+  border-color: var(--color-red);
+  border-width: 0px;
+  transition-duration: 0.5s;
+  border-radius: 20px;
+  position: relative;
+}
+
+.rvp-play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+.rvp-play img {
+  width: 7rem !important;
+  filter: blur(0px) !important;
+}
+
+.rvp-poetry:hover .rvp-play,
+.rvp-travelling:hover .rvp-play,
+.rvp-designing:hover .rvp-play {
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
+.rvp-poetry img {
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.5s;
+}
+
+.rvp-poetry:hover {
+  border-width: 15px;
+  transition-duration: 0.5s;
+}
+
+.rvp-poetry:hover img {
+  filter: blur(10px);
+  opacity: 0.8;
+  transition-duration: 0.5s;
+}
+
+.rvp-more-hobbies {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 1rem 0 1rem 1rem;
+}
+
+.rvp-travelling-outer {
+  cursor: pointer;
+  width: 100%;
+  height: 19rem;
+  border-radius: 20px;
+}
+
+.rvp-travelling-outer:hover .rvp-travelling {
+  transform-origin: bottom;
+  transform: rotateZ(2deg) translateY(-30px);
+}
+
+.rvp-travelling {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-color: var(--color-yellow);
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 0px;
+  transition-duration: 0.5s;
+}
+
+.rvp-travelling:hover {
+  border-width: 15px;
+  transition-duration: 0.5s;
+}
+
+.rvp-travelling img {
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.5s;
+}
+
+.rvp-travelling:hover img {
+  filter: blur(10px);
+  opacity: 0.8;
+  transition-duration: 0.5s;
+}
+
+.rvp-designing-outer {
+  cursor: pointer;
+  margin-top: 2rem;
+  width: 100%;
+  height: 19rem;
+  border-radius: 20px;
+}
+
+.rvp-designing-outer:hover .rvp-designing {
+  transform-origin: top;
+  transform: rotateZ(2deg) translateY(30px);
+}
+
+.rvp-designing {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-color: var(--color-purple);
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 0px;
+  transition-duration: 0.5s;
+}
+
+.rvp-designing:hover {
+  border-width: 15px;
+  transition-duration: 0.5s;
+}
+
+.rvp-designing img {
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.5s;
+}
+
+.rvp-designing:hover img {
+  filter: blur(10px);
+  opacity: 0.8;
+  transition-duration: 0.5s;
+}
+
+.rvp-his-hobbies-subtitle {
+  color: white;
+  font-weight: var(--semi-bold);
+  font-size: 1.2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rvp-his-hobbies-subtitle span {
+  color: var(--color-yellow);
+  display: inline-flex;
+  align-items: baseline;
+  height: 1.5rem;
+  overflow: hidden;
+}
+
+.rvp-hobbies-list {
+  list-style-type: none;
+  padding-left: 5px;
+  transform: translateY(0rem); /* 1.45 difference */
+  transition-duration: 0.5s;
+}
+
+.rvp-hobbies-list li {
+  text-align: left;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .rvp-hobbies {
+    padding: 5rem;
+  }
+  .rvp-hobbies-body {
+    width: 30rem;
+    height: 20rem;
+  }
+  .rvp-poetry-outer {
+    height: 20rem;
+    width: 19rem;
+  }
+  .rvp-poetry:hover {
+    border-width: 0.5rem;
+  }
+  .rvp-travelling-outer {
+    height: 9rem;
+  }
+  .rvp-travelling:hover {
+    border-width: 0.5rem;
+  }
+  .rvp-designing-outer {
+    height: 9rem;
+  }
+  .rvp-designing:hover {
+    border-width: 0.5rem;
+  }
+  .rvp-play img {
+    width: 5rem !important;
+  }
+}
+
+@media (max-width: 510px) {
+  .rvp-hobbies-body {
+    width: 21rem;
+    height: 14rem;
+    margin: 0.5rem 0.5rem 4rem 0.5rem;
+  }
+  .rvp-poetry-outer {
+    height: 14rem;
+    width: 13rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+  }
+  .rvp-poetry:hover {
+    border-width: 0.5rem;
+  }
+  .rvp-travelling-outer {
+    height: 6.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .rvp-travelling:hover {
+    border-width: 0.5rem;
+  }
+  .rvp-travelling-outer:hover .rvp-travelling {
+    transform: rotateZ(2deg) translateY(-10px);
+  }
+  .rvp-designing-outer {
+    height: 6.5rem;
+    margin-top: 1rem;
+  }
+  .rvp-designing:hover {
+    border-width: 0.5rem;
+  }
+  .rvp-more-hobbies {
+    margin: 0.5rem 0 0.5rem 0.5rem;
+  }
+  .rvp-play img {
+    width: 3rem !important;
+  }
+  .rvp-designing-outer:hover .rvp-designing {
+    transform: rotateZ(2deg) translateY(10px);
+  }
+}

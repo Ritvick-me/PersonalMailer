@@ -1,0 +1,61 @@
+.rvp-contact-social-links {
+  height: 2.5rem;
+  width: 300px;
+  margin-left: auto;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.rvp-contact-social-links svg {
+  margin-left: 8px;
+  height: 100%;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.rvp-contact-social-links svg path {
+  fill: var(--color-tartiary);
+}
+
+.rvp-contact-social-links svg:hover {
+  transform: scale(1.4);
+}
+
+.rvp-LinkedIn {
+  margin-left: 0 !important;
+}
+
+.rvp-LinkedIn:hover path {
+  fill: #0072b1;
+}
+
+.rvp-Github:hover path {
+  fill: #6f42c1;
+}
+
+.rvp-Whatsapp:hover path {
+  fill: #25d366;
+}
+
+.rvp-Instagram:hover path {
+  fill: #f56040;
+}
+
+.rvp-Codepen:hover path {
+  fill: #fcd000;
+}
+
+.rvp-Email:hover path {
+  fill: #ffffff;
+}
+
+.rvp-Phone:hover path {
+  fill: #ff2f67;
+}
+
+@media (max-width: 992px) {
+  .rvp-contact-social-links {
+    margin-left: 0;
+    margin: auto;
+  }
+}
