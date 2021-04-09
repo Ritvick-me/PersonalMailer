@@ -34,7 +34,9 @@ router.post("/", async (req, res) => {
       "\n\nPreference 1: \n\tDate:" +
       mailBody.date3 +
       "\tTime: " +
-      mailBody.time3,
+      mailBody.time3 +
+      "\n\nTopic: " +
+      mailBody.topic,
   };
 
   await transporter.sendMail(mailOptions, (err, info) => {
